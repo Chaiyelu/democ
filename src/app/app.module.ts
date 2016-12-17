@@ -1,24 +1,26 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/about/about';
-import { OrderPage } from '../pages/order/order';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { AboutComponent } from '../pages/about/about.component';
+import { OrderComponent } from '../pages/order/order.component';
+import { ContactComponent} from '../pages/contact/contact.component';
+import { HomeComponent } from '../pages/home/home.component';
+import { TabsComponent } from '../pages/tabs/tabs.component';
+import { WelcomeComponent } from '../pages/welcome/welcome.component';
+import { HotelListComponent } from '../pages/home/hotel/list/list.component';
 
-import { WelcomePage } from '../pages/welcome/welcome';
 import { Storage } from '@ionic/storage';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    OrderPage,
-    ContactPage,
-    HomePage,
-    TabsPage,
-    WelcomePage
+    AboutComponent,
+    OrderComponent,
+    ContactComponent,
+    HomeComponent,
+    TabsComponent,
+    WelcomeComponent,
+    HotelListComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,12 +28,13 @@ import { Storage } from '@ionic/storage';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    OrderPage,
-    ContactPage,
-    HomePage,
-    TabsPage,
-    WelcomePage
+    AboutComponent,
+    OrderComponent,
+    ContactComponent,
+    HomeComponent,
+    TabsComponent,
+    WelcomeComponent,
+    HotelListComponent
   ],
   providers: [Storage]
 })

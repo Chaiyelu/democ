@@ -1,0 +1,148 @@
+<ion-header>
+  <ion-navbar color="green">
+    <ion-buttons start>
+      <button ion-button icon-right small clear color="white">
+        舟山
+        <ion-icon name="arrow-down"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <button ion-button icon-left small round color="white">
+        <ion-icon name="ios-search-outline" color="green"></ion-icon>
+        <span color="light">搜索商家或商圈等</span>
+      </button>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only small clear color="white">
+        <ion-icon name="ios-qr-scanner"></ion-icon>
+      </button>
+      <button ion-button icon-only small clear color="white">
+        <ion-icon name="ios-notifications-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="home-nav">
+    <ion-slides [options]="mySlideOptions">
+      <ion-slide>
+        <button ion-button icon-only (click)="pushPage()">
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="star"></ion-icon>
+        </button>
+      </ion-slide>
+      <ion-slide>
+        <h2>Slide 2</h2>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-33>
+        <h2>0元霸王餐</h2>
+        <p>会员面单福利</p>
+        <img src="" alt="">
+      </ion-col>
+      <ion-col width-33>
+        <h2>0元霸王餐</h2>
+        <p>会员面单福利</p>
+        <img src="" alt="">
+      </ion-col>
+      <ion-col width-33>
+        <h2>0元霸王餐</h2>
+        <p>会员面单福利</p>
+        <img src="" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-33>
+        <h2>0元霸王餐</h2>
+        <p>会员面单福利</p>
+        <img src="" alt="">
+      </ion-col>
+      <ion-col width-33>
+        <h2>0元霸王餐</h2>
+        <p>会员面单福利</p>
+        <img src="" alt="">
+      </ion-col>
+      <ion-col width-33>
+        <h2>0元霸王餐</h2>
+        <p>会员面单福利</p>
+        <img src="" alt="">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list no-lines>
+    <ion-list-header>
+      — 猜你喜欢 —
+    </ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>Finn</h2>
+        <h3>Don't Know What To Do!</h3>
+        <p>Hayao Miyazaki • 1988</p>
+        <ion-note item-right>
+          <p class="start">7.3Km</p>
+          <p  class="end">已售321</p>
+        </ion-note>
+        <!-- <button ion-button clear item-right>View</button> -->
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" icon-left>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>Finn</h2>
+        <h3>Don't Know What To Do!</h3>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button item-right>View</button>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" icon-left>
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

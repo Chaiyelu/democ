@@ -3,13 +3,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'home-hotel-list',
+  templateUrl: 'list.component.html'
 })
-export class HomePage {
-  mySlideOptions = {
-    pager: true
-  };
+export class HotelListComponent {
   constructor(public navCtrl: NavController) {
 
   }

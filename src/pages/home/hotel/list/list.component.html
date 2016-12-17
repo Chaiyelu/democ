@@ -1,23 +1,19 @@
 <ion-header>
-  <ion-navbar color="green">
+  <ion-navbar hideBackButton="true">
     <ion-buttons start>
-      <button ion-button icon-right small clear color="white">
-        舟山
-        <ion-icon name="arrow-down"></ion-icon>
+      <button ion-button icon-only small clear color="green">
+        <ion-icon name="arrow-back"></ion-icon>
       </button>
     </ion-buttons>
     <ion-title>
-      <button ion-button icon-left small round color="white">
-        <ion-icon name="ios-search-outline" color="green"></ion-icon>
+      <button ion-button icon-left small color="white">
+        <ion-icon name="ios-search-outline"></ion-icon>
         <span color="light">搜索商家或商圈等</span>
       </button>
     </ion-title>
     <ion-buttons end>
-      <button ion-button icon-only small clear color="white">
-        <ion-icon name="ios-qr-scanner"></ion-icon>
-      </button>
-      <button ion-button icon-only small clear color="white">
-        <ion-icon name="ios-notifications-outline"></ion-icon>
+      <button ion-button icon-only small clear color="green">
+        <ion-icon name="pin"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -27,21 +23,6 @@
   <div class="home-nav">
     <ion-slides [options]="mySlideOptions">
       <ion-slide>
-        <button ion-button icon-only>
-          <ion-icon name="star"></ion-icon>
-        </button>
-        <button ion-button icon-only>
-          <ion-icon name="star"></ion-icon>
-        </button>
-        <button ion-button icon-only>
-          <ion-icon name="star"></ion-icon>
-        </button>
-        <button ion-button icon-only>
-          <ion-icon name="star"></ion-icon>
-        </button>
-        <button ion-button icon-only>
-          <ion-icon name="star"></ion-icon>
-        </button>
         <button ion-button icon-only>
           <ion-icon name="star"></ion-icon>
         </button>
